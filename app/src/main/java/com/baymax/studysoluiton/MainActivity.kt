@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.destination_home,
                 R.id.destination_study_material,
                 R.id.destination_time_table,
-                R.id.destination_toppers
+                R.id.destination_toppers,
+                R.id.destination_profile
         ),
         drawer_layout
         )
@@ -71,7 +72,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.destination_home,
                 R.id.destination_study_material,
                 R.id.destination_time_table,
-                R.id.destination_toppers
+                R.id.destination_toppers,
+                R.id.destination_profile
             ),
             drawer_layout
         )

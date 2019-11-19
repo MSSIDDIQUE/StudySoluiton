@@ -13,7 +13,11 @@
     <fragment
         android:id="@+id/destination_toppers"
         android:name="com.baymax.studysoluiton.ToppersFragment"
-        android:label="Toppers" />
+        android:label="Toppers" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/destination_topper_destination" />
+    </fragment>
     <fragment
         android:id="@+id/destination_time_table"
         android:name="com.baymax.studysoluiton.TimeTableFragment"
@@ -22,4 +26,13 @@
         android:id="@+id/destination_study_material"
         android:name="com.baymax.studysoluiton.StudyMaterialFragment"
         android:label="Study Material" />
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.baymax.studysoluiton.ProfileFragment"
+        android:label="Profile" />
+    <fragment
+        android:id="@+id/destination_topper_destination"
+        android:name="com.baymax.studysoluiton.ToppersDescriptionFragment"
+        android:label="fragment_toppers_description"
+        tools:layout="@layout/fragment_toppers_description" />
 </navigation>
