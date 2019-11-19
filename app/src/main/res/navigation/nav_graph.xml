@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.baymax.studysoluiton.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_study_material" />
+    <fragment
+        android:id="@+id/destination_toppers"
+        android:name="com.baymax.studysoluiton.ToppersFragment"
+        android:label="Toppers" />
+    <fragment
+        android:id="@+id/destination_time_table"
+        android:name="com.baymax.studysoluiton.TimeTableFragment"
+        android:label="Time Table" />
+    <fragment
+        android:id="@+id/destination_study_material"
+        android:name="com.baymax.studysoluiton.StudyMaterialFragment"
+        android:label="Study Material" />
+</navigation>
