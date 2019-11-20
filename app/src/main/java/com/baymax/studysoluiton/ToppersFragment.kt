@@ -10,9 +10,6 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_toppers.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class ToppersFragment : Fragment() {
 
     override fun onCreateView(
@@ -26,7 +23,9 @@ class ToppersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         button.setOnClickListener{
-            Navigation.findNavController(it).navigate(R.id.next_action)
+            val nextAction = ToppersFragmentDirections.nextAction()
+            nextAction.setNumOfToppers(10)
+            Navigation.findNavController(it).navigate(nextAction)
         }
     }
 }

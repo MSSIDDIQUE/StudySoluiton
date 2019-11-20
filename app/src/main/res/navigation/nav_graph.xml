@@ -16,7 +16,11 @@
         android:label="Toppers" >
         <action
             android:id="@+id/next_action"
-            app:destination="@id/destination_topper_destination" />
+            app:destination="@id/destination_topper_destination" >
+            <argument android:name="numberOfToppers"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/destination_time_table"
@@ -33,6 +37,11 @@
     <fragment
         android:id="@+id/destination_topper_destination"
         android:name="com.baymax.studysoluiton.ToppersDescriptionFragment"
-        android:label="fragment_toppers_description"
-        tools:layout="@layout/fragment_toppers_description" />
+        android:label="Topper Description"
+        tools:layout="@layout/fragment_toppers_description" >
+        <argument
+            android:name="numOfToppers"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>
