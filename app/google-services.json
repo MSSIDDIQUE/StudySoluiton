@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "478931591492",
+    "firebase_url": "https://coachingapp-af070.firebaseio.com",
+    "project_id": "coachingapp-af070",
+    "storage_bucket": "coachingapp-af070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478931591492:android:03271ed8883562800e3711",
+        "android_client_info": {
+          "package_name": "com.baymax.studysolutions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478931591492-kmhfkfkher98jii2mmievkd4aeeolubg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRpxa07FHpUkJn8si73RYwcjj8nhOk8vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478931591492-kmhfkfkher98jii2mmievkd4aeeolubg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478931591492:android:8c1531db793325aa",
+        "android_client_info": {
+          "package_name": "com.saquib.hello.coachingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478931591492-onecipb4vqeenmjngkahogu41mljabu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saquib.hello.coachingapp",
+            "certificate_hash": "dd2ece3146b857da4d36f20e14981f54434fff5b"
+          }
+        },
+        {
+          "client_id": "478931591492-it11rb98ctctg1ja6hafkln9tjrti6qt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saquib.hello.coachingapp",
+            "certificate_hash": "edd366514a3f421df59fb75d3f4b659189d13297"
+          }
+        },
+        {
+          "client_id": "478931591492-kmhfkfkher98jii2mmievkd4aeeolubg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRpxa07FHpUkJn8si73RYwcjj8nhOk8vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478931591492-kmhfkfkher98jii2mmievkd4aeeolubg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

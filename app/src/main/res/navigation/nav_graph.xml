@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/destination_home"
-        android:name="com.baymax.studysoluiton.HomeFragment"
+        android:name="com.baymax.studysolutions.ui.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_study_material" />
     <fragment
         android:id="@+id/destination_toppers"
-        android:name="com.baymax.studysoluiton.ToppersFragment"
+        android:name="com.baymax.studysolutions.ui.toppers.ToppersFragment"
         android:label="Toppers" >
         <action
             android:id="@+id/next_action"
@@ -24,19 +24,19 @@
     </fragment>
     <fragment
         android:id="@+id/destination_time_table"
-        android:name="com.baymax.studysoluiton.TimeTableFragment"
+        android:name="com.baymax.studysolutions.ui.fragments.TimeTableFragment"
         android:label="Time Table" />
     <fragment
         android:id="@+id/destination_study_material"
-        android:name="com.baymax.studysoluiton.StudyMaterialFragment"
+        android:name="com.baymax.studysolutions.ui.fragments.StudyMaterialFragment"
         android:label="Study Material" />
     <fragment
         android:id="@+id/destination_profile"
-        android:name="com.baymax.studysoluiton.ProfileFragment"
+        android:name="com.baymax.studysolutions.ui.fragments.ProfileFragment"
         android:label="Profile" />
     <fragment
         android:id="@+id/destination_topper_destination"
-        android:name="com.baymax.studysoluiton.ToppersDescriptionFragment"
+        android:name="com.baymax.studysolutions.ui.fragments.ToppersDescriptionFragment"
         android:label="Topper Description"
         tools:layout="@layout/fragment_toppers_description" >
         <argument

@@ -1,4 +1,4 @@
-package com.baymax.studysoluiton
+package com.baymax.studysolutions
 
 import org.junit.Test
 

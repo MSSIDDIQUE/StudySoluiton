@@ -1,4 +1,4 @@
-package com.baymax.studysoluiton
+package com.baymax.studysolutions
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +9,12 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import kotlinx.android.synthetic.main.activity_main.*
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.kodein
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),KodeinAware {
+
+    override val kodein by kodein()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
