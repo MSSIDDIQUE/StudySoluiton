@@ -1,10 +1,8 @@
 package com.baymax.studysolutions.data
 
 import com.baymax.studysolutions.data.firebase.Login
-import com.baymax.studysolutions.data.firebase.Toppers
 
-class Repository (private val firebaseLogin : Login,
-                  private val firebaseToppers: Toppers
+class Repository (private val firebaseLogin : Login
 ){
     fun login(email: String, password: String) = firebaseLogin.login(email, password)
 
@@ -13,6 +11,4 @@ class Repository (private val firebaseLogin : Login,
     fun currentUser() = firebaseLogin.currentUser()
 
     fun logout() = firebaseLogin.logout()
-
-    fun getToppers() = firebaseToppers.getToppers()
 }

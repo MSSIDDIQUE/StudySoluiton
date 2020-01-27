@@ -2,18 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/destination_toppers"
-        android:icon="@drawable/ic_topper"
-        android:title="Toppers">
-    </item>
-
-    <item
-        android:id="@+id/destination_study_material"
-        android:icon="@drawable/ic_study_material"
-        android:title="StudyMaterial">
-    </item>
-
-    <item
         android:id="@+id/destination_home"
         android:icon="@drawable/ic_home"
         android:title="Home">

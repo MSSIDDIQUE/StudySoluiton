@@ -8,18 +8,6 @@
     </item>
 
     <item
-        android:id="@+id/destination_toppers"
-        android:icon="@drawable/ic_topper"
-        android:title="Toppers">
-    </item>
-
-    <item
-        android:id="@+id/destination_study_material"
-        android:icon="@drawable/ic_study_material"
-        android:title="Study Material">
-    </item>
-
-    <item
         android:id="@+id/destination_time_table"
         android:icon="@drawable/ic_time"
         android:title="Time Table">
