@@ -1,13 +1,11 @@
-package com.baymax.studysolutions.data
+package com.baymax.studysolutions.data.network
 
 import android.util.Log
-import com.baymax.studysolutions.data.firebase.CurrentWeatherResponse
-import com.baymax.studysolutions.data.firebase.Location
+import com.baymax.studysolutions.data.network.response.CurrentWeatherResponse
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.Deferred
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -26,6 +24,7 @@ interface WeatherApiService {
 
     companion object {
         operator fun invoke(
+            connectivityInterceptor: ConnectivityInterceptor
         ): WeatherApiService {
             val requestInterceptor = Interceptor { chain ->
 
@@ -46,6 +45,7 @@ interface WeatherApiService {
 
             val okHttpClient = OkHttpClient.Builder()
                 .addInterceptor(requestInterceptor)
+                .addInterceptor(connectivityInterceptor)
                 .build()
 
             return Retrofit.Builder()

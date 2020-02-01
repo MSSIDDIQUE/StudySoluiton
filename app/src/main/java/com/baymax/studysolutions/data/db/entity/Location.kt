@@ -1,4 +1,4 @@
-package com.baymax.studysolutions.data.firebase
+package com.baymax.studysolutions.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName
