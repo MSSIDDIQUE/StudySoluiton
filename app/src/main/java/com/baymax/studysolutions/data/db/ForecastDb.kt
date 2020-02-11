@@ -4,11 +4,15 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import com.baymax.studysolutions.data.CurrentWeatherDao
 import com.baymax.studysolutions.data.db.entity.CurrentWeatherEntry
+import com.baymax.studysolutions.utils.Converters
 
 @Database(entities = [CurrentWeatherEntry::class],
-          version = 1)
+          version = 1,
+          exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class ForecastDb:RoomDatabase() {
     abstract fun currentWeatherDao():CurrentWeatherDao
     companion object {
